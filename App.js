@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 {
   /* <h1>React First Program</h1>; */
 }
@@ -60,23 +62,17 @@
   </div>
   </div> */
 // }
-// const heading = React.createElement("div", { id: "parent" }, [
-//   React.createElement("div", { id: "child1" }, [
-//     React.createElement("h1", {}, "Hello child1 H1 Tag"),
-//     React.createElement("h2", {}, "Hello child1 H2 Tag"),
-//     React.createElement("h3", {}, "Hello child1 H3 Tag"),
-//   ]),
-//   React.createElement("div", { id: "child2" }, [
-//     React.createElement("h1", {}, "Hello child2 H1 Tag"),
-//     React.createElement("h2", {}, "Hello child2 H2 Tag"),
-//     React.createElement("h3", {}, "Hello child2 H3 Tag"),
-//   ]),
-// ]);
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
-
-return (
-  <div>
-    <h1>HJEllo</h1>
-  </div>
-);
+const heading = React.createElement("div", { id: "parent" }, [
+  React.createElement("div", { id: "child1" }, [
+    React.createElement("h1", {}, "Hello Vishal Singh"),
+    React.createElement("h2", {}, "React Tutorial"),
+    React.createElement("h3", {}, "Hii........"),
+  ]),
+  React.createElement("div", { id: "child2" }, [
+    React.createElement("h1", {}, "Hello child2 H1 Tag"),
+    React.createElement("h2", {}, "Hello child2 H2 Tag"),
+    React.createElement("h3", {}, "Hello child2 H3 Tag"),
+  ]),
+]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);
